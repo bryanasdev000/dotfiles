@@ -313,6 +313,7 @@ globalkeys = gears.table.join(
     -- My awesome keys
     awful.key({ modkey,           }, "c", function () awful.spawn("rofi -show") end),
     awful.key({ modkey, "Control" }, "l", function () awful.spawn("slock") end),
+    awful.key({ modkey,           }, "l", function () awful.spawn("slock") end),
     awful.key({ modkey,           }, "e", function () awful.spawn("thunar") end),
 
 
