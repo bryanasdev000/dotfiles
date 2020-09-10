@@ -12,6 +12,7 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 -- Notification library
 local naughty = require("naughty")
+naughty.config.defaults['icon_size'] = 100
 local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 -- Enable hotkeys help widget for VIM and other apps
@@ -313,7 +314,7 @@ globalkeys = gears.table.join(
     -- My awesome keys
     awful.key({ modkey,           }, "c", function () awful.spawn("rofi -show") end),
     awful.key({ modkey, "Control" }, "l", function () awful.spawn("slock") end),
-    awful.key({ modkey,           }, "l", function () awful.spawn("slock") end),
+    --awful.key({ modkey,           }, "l", function () awful.spawn("slock") end),
     awful.key({ modkey,           }, "e", function () awful.spawn("thunar") end),
 
 
